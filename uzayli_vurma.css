@@ -1,0 +1,82 @@
+
+.box button{
+    background-color: rgb(137, 137, 227);
+    color:aliceblue;
+    font-size: 20px;
+    border:0;
+    border-radius: 40px;
+    padding:10px 20px;
+    width: 100px;
+    height: 50px;
+}
+.box button:active{
+    background-color: red;
+}
+.box{
+    text-align: center;
+    font-family: serif;
+    width: 90%;
+    margin-top: 7rem ;
+   
+}
+.box h1{
+    font-size:50px ;
+    color:rgb(38, 216, 148);
+    text-align: center;
+    margin-bottom: 20px;
+   
+    
+}
+.box h3{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 400px;
+    font-size: xx-large;
+}
+
+
+.oyun-alanı{
+ 
+    width: 100%;
+    font-weight: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+
+}
+.gemi{
+    position: relative;
+    margin:  0.5rem;
+    margin-top: 5rem;
+    height: 100px;
+    width: 200px;
+    background-size: cover;
+  } 
+  .gemi::after {
+    position: absolute;
+    top: 0%;
+    left: 40px;
+    width: 90%;
+    height: 90%;
+    content: "";
+    background: url("ship.png") center no-repeat;
+    background-size: contain;
+  }
+
+
+  .uzaylı{
+    
+    position: absolute;
+    top: -100px;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 150px;
+    background-image: url("alien.png");
+    background-size: contain;
+    z-index: -1; /* Gemiden arkada olmasını sağlar */
+}
+.uzaylı.secilen {
+    top: -3rem;
+  }
